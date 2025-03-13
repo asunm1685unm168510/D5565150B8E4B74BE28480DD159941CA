@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+      /* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffd722, #1c2541, #da8b15); /* Dark blue gradient */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: white;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: rgba(15, 15, 15, 0.9); /* Dark sidebar */
+    padding: 20px;
+    height: 100vh;
+    box-shadow: 5px 0 15px rgba(255, 255, 255, 0.1);
+}
+.sidebar h2 {
+    color: #ffcc00; /* Gold color */
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    padding: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.sidebar ul li:hover {
+    background: #ffcc00;
+    color: black;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+header h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+    background: -webkit-linear-gradient(45deg, #ffcc00, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Featured Section */
+.featured h2 {
+    color: #ffcc00;
+    font-size: 2rem;
+    text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.5);
+    font-weight: 600;
+}
+.album-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.album-card {
+    flex: 1;
+    min-width: 150px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+}
+.album-card:hover {
+    transform: scale(1.1);
+    background: rgba(255, 215, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.5);
+}
+
+/* Music Player */
+.music-player {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(10, 10, 10, 0.9);
+    padding: 15px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ffcc00;
+    box-shadow: 0 -5px 10px rgba(255, 215, 0, 0.3);
+}
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Music Hub</h2>
+        <ul>
+            <li>love song</li>
+            <li>alone Song</li>
+            <li>friendship song</li>
+            <li>vibe song</li>
+            <li>album song</li>
+        </ul>
+    </div>
+    
+    <div class="main-content">
+        <header>
+            <h1>JTM MUSIC WORLD</h1>
+        </header>
+        <section class="featured">
+            <h2>ARTIST NAME</h2>
+            <div class="album-grid">
+                <div class="album-card"><a href="HIP HOP ADHI.HTML">HIP HOP ADHI</a></div>
+                <div class="album-card"><a href="U1 DRUGS.HTML">U1 DRUGS</a></div>
+                <div class="album-card"><a href="GV PRAKASH.HTML">GV PRAKASH</a> </div>
+                <div class="album-card"><a href="ANIRUDH.HTML">ANIRUTH</a></div>
+                <a href="INDEX .HTML"></a>
+            </div>
+        </section>
+    </div>
+    
+    <div class="music-player">
+        <p>Now Playing: Song Name - Artist</p>
+    </div>
+</body>
+</html>
